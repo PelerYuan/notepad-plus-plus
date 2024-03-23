@@ -4256,16 +4256,17 @@ void StyleArray::addStyler(int styleID, TiXmlNode *styleNode)
 		str = element->Attribute(TEXT("fgColor"));
 		if (str)
 		{
-			unsigned long result = hexStrVal(str);
-			s._fgColor = (RGB((result >> 16) & 0xFF, (result >> 8) & 0xFF, result & 0xFF)) | (result & 0xFF000000);
-
+			// unsigned long result = hexStrVal(str);
+			// s._fgColor = (RGB((result >> 16) & 0xFF, (result >> 8) & 0xFF, result & 0xFF)) | (result & 0xFF000000);
+			s._fgColor = RGB(0xFF, 0xFF, 0);
 		}
 
 		str = element->Attribute(TEXT("bgColor"));
 		if (str)
 		{
-			unsigned long result = hexStrVal(str);
-			s._bgColor = (RGB((result >> 16) & 0xFF, (result >> 8) & 0xFF, result & 0xFF)) | (result & 0xFF000000);
+			// unsigned long result = hexStrVal(str);
+			// s._bgColor = (RGB((result >> 16) & 0xFF, (result >> 8) & 0xFF, result & 0xFF)) | (result & 0xFF000000);
+			s._bgColor = RGB(0xFF, 0, 0);
 		}
 
 		str = element->Attribute(TEXT("colorStyle"));

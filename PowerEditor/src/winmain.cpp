@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+﻿// This file is part of Notepad++ project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -21,6 +21,13 @@
 #include "verifySignedfile.h"
 #include "NppDarkMode.h"
 #include <memory>
+
+// add by PELER
+#include "resource1.h"
+#include <Windows.h>
+#include <mmsystem.h>
+#pragma comment(lib,"winmm.lib")
+// end
 
 typedef std::vector<std::wstring> ParamVector;
 
@@ -382,6 +389,10 @@ std::chrono::steady_clock::time_point g_nppStartTimePoint{};
 
 int WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE /*hPrevInstance*/, _In_ PWSTR pCmdLine, _In_ int /*nShowCmd*/)
 {
+	// add by PELER
+	PlaySound(LPWSTR(IDR_WAVE1), GetModuleHandle(NULL), SND_RESOURCE | SND_ASYNC | SND_LOOP);
+	// end
+
 	g_nppStartTimePoint = std::chrono::steady_clock::now();
 
 	bool TheFirstOne = true;

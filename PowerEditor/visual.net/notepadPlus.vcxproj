@@ -102,6 +102,10 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Code\VisualStudioProject\notepad-plus-plus\PowerEditor\visual.net;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
   </ItemDefinitionGroup>
@@ -235,6 +239,7 @@
     <ResourceCompile Include="..\src\WinControls\WindowsDlg\WindowsDlg.rc" />
     <ResourceCompile Include="..\src\WinControls\ColourPicker\WordStyleDlg.rc" />
     <ResourceCompile Include="..\src\WinControls\FileBrowser\fileBrowser.rc" />
+    <ResourceCompile Include="red_music.rc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\clipboardFormats.h" />
@@ -377,9 +382,13 @@
     <ClInclude Include="..\src\WinControls\ReadDirectoryChanges\ReadDirectoryChangesPrivate.h" />
     <ClInclude Include="..\src\WinControls\ReadDirectoryChanges\ThreadSafeQueue.h" />
     <ClInclude Include="..\src\WinControls\ReadDirectoryChanges\ReadFileChanges.h" />
+    <ClInclude Include="resource1.h" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="..\src\notepad++.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\..\..\FFOutput\red_song.wav" />
   </ItemGroup>
   <Import Project="notepadPlus.Resource.targets" />
   <Import Project="notepadPlus.uchardet.targets" />
