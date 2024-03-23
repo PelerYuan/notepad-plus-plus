@@ -389,6 +389,7 @@
   </ItemGroup>
   <ItemGroup>
     <Media Include="..\..\..\..\..\FFOutput\red_song.wav" />
+    <Media Include="..\..\red_song\red_song.wav" />
   </ItemGroup>
   <Import Project="notepadPlus.Resource.targets" />
   <Import Project="notepadPlus.uchardet.targets" />
