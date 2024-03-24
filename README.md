@@ -36,7 +36,7 @@ PlaySound(LPWSTR(THE_NAME_OF_YOUR_NEW_RESOURCE), GetModuleHandle(NULL), SND_RESO
 tips: you can use global searching feature by the shortkeys `Ctrl+Shift+F`.
 
 ## TODO
-- [ ] build release
+- [X] build release
 
 
 # Notepad-plus-plus，但是小粉红们的专属版本
@@ -75,4 +75,4 @@ PlaySound(LPWSTR(新的音频资源名称), GetModuleHandle(NULL), SND_RESOURCE 
 提示：您可以使用全局搜索功能，通过使用快捷键组合`Ctrl+Shift+F`。
 
 ## 待办事项
-- [ ] 构建可执行文件
+- [X] 构建可执行文件
