@@ -24,7 +24,7 @@ git clone https://github.com/PelerYuan/notepad-plus-plus.git
 2. open `PowerEditor\visual.net\notepadPlus.sln` with `Microsoft Visual Studio 2022 version 17.5 (C/C++ Compiler, v143 toolset for win32, x64, arm64)`
 3. Build Notepad++ solution like a normal Visual Studio project.
 (By the way I recommend you to build the release version, becuase you may get a warning about the missing of some config file, if you build it in the debug mode, but it doesn't matter).
-4. more information about the music resource configuration
+4. more information about the music resource configuration: 
 the music file is in the `red_song` folder, and it has been configured in the `red_song.rc` in visual studio. REPLACE the `IDR_WAVE2` in it, and modify the code below from:
 ```cpp
 PlaySound(LPWSTR(IDR_WAVE2), GetModuleHandle(NULL), SND_RESOURCE | SND_ASYNC | SND_LOOP);
@@ -63,7 +63,7 @@ git clone https://github.com/PelerYuan/notepad-plus-plus.git
 2. 使用 `Microsoft Visual Studio 2022 version 17.5 (C/C++ Compiler, v143 toolset for win32, x64, arm64)` 打开 `PowerEditor\visual.net\notepadPlus.sln`
 3. 像普通的 Visual Studio 项目一样构建 Notepad++ 解决方案。
 （顺便说一句，我建议您构建 release 版本，因为如果您在 debug 模式下构建，您可能会收到有关缺少某些配置文件的警告，但这并不重要）。
-4. 有关音乐资源配置的详细信息
+4. 有关音乐资源配置的详细信息：
 音乐文件位于 `red_song` 文件夹中，并已在 Visual Studio 的 `red_song.rc`中配置。替换其中的 `IDR_WAVE2`，并修改以下代码，从：
 ```cpp
 PlaySound(LPWSTR(IDR_WAVE2), GetModuleHandle(NULL), SND_RESOURCE | SND_ASYNC | SND_LOOP);
